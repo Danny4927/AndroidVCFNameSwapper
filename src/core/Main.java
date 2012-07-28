@@ -29,6 +29,7 @@ public class Main {
 					if (hilfsvariable != null) {
 						hilfsvariable[0]=hilfsvariable[0].replace("FN:", "");
 						if (hilfsvariable.length > 1) {
+							hilfsvariable[1] = hilfsvariable[1].substring(1);
 							text[i] = "FN:" + hilfsvariable[1] + ", "
 									+ hilfsvariable[0];
 							System.out.println("Fullname von " + hilfsvariable[0]
